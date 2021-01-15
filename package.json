@@ -4,8 +4,9 @@
   "description": "A starter codebase for a node server written in TypeScript!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start": "ts-node src/config/server.ts",
+    "dev": "nodemon -x ts-node src/config/server.ts"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TePossinoAcciaccatte/node-server-starter-ts.git"

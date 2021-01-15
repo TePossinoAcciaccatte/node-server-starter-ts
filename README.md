@@ -15,4 +15,5 @@ A starter codebase for a node server written in TypeScript!
 * run command `$ npm install`
 * run application: `$ npm run dev`
 
-You're done! You have a running TypeScript server on your machine! Now get your hands dirty and extend this code to make beautiful things!
+You're done! You have a running TypeScript server on your machine! 
+Now get your hands dirty and extend this code to make beautiful things!

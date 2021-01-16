@@ -1,13 +1,31 @@
 import { Request, Response } from 'express';
 import Controller from './controller';
 
+/**
+* An example of a controller. This class is meant to define context-driven routes and the 
+* method bound to each route.
+* 
+*/
 class ExampleController extends Controller {
     
+    /**
+    * Builds parent properties and initializes the defined routes.
+    * 
+    * @constructor
+    * @param path - The base path of the routes handled by this controller
+    */
     constructor(path: string) {
         super(path);
         this.intializeRoutes();
     }
 
+    /**
+    * Init method called by constructor when a new instance of this class is created.
+    * You define the routes handled by this controller here, using the parent attribute
+    * router which is an Express router. The route is the concatenation of the base path 
+    * defined when constructed this controller + the path you define. 
+    *
+    */
     private intializeRoutes() {
         this.router.get(`${this.path}/example1`, this.runExample);
         this.router.get(`${this.path}/example2`, this.runExample2);

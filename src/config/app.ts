@@ -1,5 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import Controller from '../controllers/controller';
 
 /**
@@ -33,8 +32,8 @@ class App {
   *
   */  
   private initializeMiddlewares() {
-    this.app.use(bodyParser.json(({ limit: '75mb' })));
-    this.app.use(bodyParser.urlencoded({extended : true}));
+    this.app.use(express.json(({ limit: '75mb' })));
+    this.app.use(express.urlencoded({extended : true}));
   }
    
   /**
